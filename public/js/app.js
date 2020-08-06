@@ -1899,6 +1899,74 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ActividadComponent.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ActividadComponent.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      actividades: [{
+        titulo: "aprender vue.js"
+      }, {
+        titulo: "aprender Laravel"
+      }, {
+        titulo: "aprender Node.js"
+      }],
+      titulo: ""
+    };
+  },
+  methods: {
+    nuevaActividad: function nuevaActividad() {
+      this.actividades.push({
+        titulo: this.titulo
+      });
+    },
+    eliminarActividad: function eliminarActividad(i) {
+      this.actividades.splice(i, 1);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -1924,9 +1992,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component cargado.");
   }
 });
 
@@ -37499,6 +37590,128 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ActividadComponent.vue?vue&type=template&id=61264aeb&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ActividadComponent.vue?vue&type=template&id=61264aeb& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("h1", [_vm._v("Actividades")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("h2", [_vm._v("Nueva Actividad")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.titulo,
+                    expression: "titulo"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text" },
+                domProps: { value: _vm.titulo },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.titulo = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-primary",
+                  on: {
+                    click: function($event) {
+                      return _vm.nuevaActividad()
+                    }
+                  }
+                },
+                [_vm._v("Agregar actividad")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row" },
+            _vm._l(_vm.actividades, function(act, index) {
+              return _c(
+                "div",
+                { key: act, staticClass: "col-md-5 bg-success m-2" },
+                [
+                  _c("h3", [_vm._v(_vm._s(act.titulo))]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-danger",
+                      on: {
+                        click: function($event) {
+                          return _vm.eliminarActividad(index)
+                        }
+                      }
+                    },
+                    [_vm._v("x")]
+                  )
+                ]
+              )
+            }),
+            0
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1)
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("h2", [_vm._v("Actividades en Proceso")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("h2", [_vm._v("Actividades Terminadas")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
@@ -37526,14 +37739,56 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-8" }, [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
+              _vm._v("Este es un ejemplo de componente en Vue.js")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+              _vm._v("Soy Un componente.")
             ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6 bg-primary" }, [
+          _vm._v(
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi facilis quae iusto perferendis amet dolores fugit expedita, consectetur iste nisi voluptatum harum veritatis consequuntur laboriosam nesciunt modi. Quisquam, sint."
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6 bg-danger" }, [
+          _vm._v(
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique dignissimos soluta delectus repellendus officia nemo ad totam, at deserunt explicabo asperiores aut, itaque neque quis nulla vero corrupti esse?"
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-12 bg-warning" }, [
+          _vm._v(
+            "\n      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia porro ipsum blanditiis. Dolores voluptatum atque doloremque quia, consequuntur reprehenderit eaque rem. Quae dolorem beatae, numquam ratione placeat sint? Vel, nostrum!\n      Atque exercitationem fugit maxime veniam aliquam ipsam dolore recusandae quae iste ex, ipsum dignissimos repellat aliquid magnam eveniet. Sunt, excepturi nisi? Optio consequatur vitae, suscipit autem atque quo praesentium recusandae.\n      Aut repellendus saepe dolore itaque temporibus eos? Consequatur maiores veniam odio, praesentium illum doloremque obcaecati porro voluptate, a aut fuga. Quia delectus praesentium voluptates ipsum magni! Consequuntur dolorem error earum?\n      Molestiae aspernatur rem amet recusandae esse nam repellendus architecto corrupti consequuntur incidunt, quia aliquam eaque consequatur mollitia porro possimus dolor dignissimos tempore in est fugiat alias. Sunt quibusdam repellat magni.\n      Adipisci veniam soluta sunt distinctio neque harum! Nisi nemo ab unde libero in sit labore deleniti mollitia qui molestiae commodi blanditiis cupiditate corrupti reprehenderit eaque veritatis, odit, eveniet aspernatur quas.\n    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, sint hic repudiandae nesciunt velit ab, culpa necessitatibus sed suscipit officia voluptate explicabo libero veritatis asperiores consequuntur non in omnis."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, sint hic repudiandae nesciunt velit ab, culpa necessitatibus sed suscipit officia voluptate explicabo libero veritatis asperiores consequuntur non in omnis."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, sint hic repudiandae nesciunt velit ab, culpa necessitatibus sed suscipit officia voluptate explicabo libero veritatis asperiores consequuntur non in omnis."
+            )
           ])
         ])
       ])
@@ -49734,6 +49989,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
+Vue.component('actividad', __webpack_require__(/*! ./components/ActividadComponent.vue */ "./resources/js/components/ActividadComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -49788,6 +50044,75 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/ActividadComponent.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/ActividadComponent.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ActividadComponent_vue_vue_type_template_id_61264aeb___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ActividadComponent.vue?vue&type=template&id=61264aeb& */ "./resources/js/components/ActividadComponent.vue?vue&type=template&id=61264aeb&");
+/* harmony import */ var _ActividadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ActividadComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ActividadComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ActividadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ActividadComponent_vue_vue_type_template_id_61264aeb___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ActividadComponent_vue_vue_type_template_id_61264aeb___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ActividadComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ActividadComponent.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/ActividadComponent.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ActividadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ActividadComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ActividadComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ActividadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ActividadComponent.vue?vue&type=template&id=61264aeb&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/ActividadComponent.vue?vue&type=template&id=61264aeb& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ActividadComponent_vue_vue_type_template_id_61264aeb___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ActividadComponent.vue?vue&type=template&id=61264aeb& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ActividadComponent.vue?vue&type=template&id=61264aeb&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ActividadComponent_vue_vue_type_template_id_61264aeb___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ActividadComponent_vue_vue_type_template_id_61264aeb___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
