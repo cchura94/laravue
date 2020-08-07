@@ -45,3 +45,7 @@ Route::get("/nombre/{nombre}", function($nom){
 Route::get("/actividad", function(){
     return view("actividades");
 });
+
+Route::get("/carrito", function(){
+    return view("carrito");
+});

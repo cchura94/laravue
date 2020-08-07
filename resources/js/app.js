@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('actividad', require('./components/ActividadComponent.vue').default);
+Vue.component('carrito', require('./components/CarritoComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
